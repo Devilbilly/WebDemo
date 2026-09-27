@@ -1,5 +1,56 @@
 {
   "schema": 1,
   "repo": "Devilbilly/WebDemo",
-  "issues": {}
+  "issues": {
+    "1": {
+      "done": [
+        "2026-09-27 PR #2 opened: \u78ba\u8a8d\u8a02\u55ae button + per-item \u79fb\u9664; 18 playwright tests pass; A/B main FAIL -> branch PASS"
+      ],
+      "category": "script",
+      "first_triaged": "2026-09-27",
+      "last_updated": "2026-09-27",
+      "runtime": {
+        "last": "claude",
+        "source": "\u9810\u8a2d\uff08\u6c92\u6709\u4efb\u4f55\u8a2d\u5b9a\uff09",
+        "fallback": "",
+        "rounds": {
+          "claude": 1
+        },
+        "date": "2026-09-27"
+      },
+      "status": "verification-required",
+      "items": [
+        {
+          "id": 1,
+          "item": "Checkout button text changes from the old submit label to the confirm label",
+          "author": "Devilbilly",
+          "resolved": true,
+          "verified": false,
+          "added": "2026-09-27",
+          "regression": "tests/i1-confirm-and-remove.spec.js",
+          "resolve_note": "submit button reads the confirm label; old label gone"
+        },
+        {
+          "id": 2,
+          "item": "Each cart row gets a remove button that drops the whole item, updates the total, and shows the empty-cart note once everything is removed",
+          "author": "Devilbilly",
+          "resolved": true,
+          "verified": false,
+          "added": "2026-09-27",
+          "regression": "tests/i1-confirm-and-remove.spec.js",
+          "resolve_note": "per-row remove button deletes the item, re-renders cart and total, empty note returns"
+        }
+      ],
+      "replies": [
+        {
+          "date": "2026-09-27",
+          "kind": "commit",
+          "ref": "eacf1c6",
+          "note": "button rename + per-item remove + tests/i1-confirm-and-remove.spec.js",
+          "by": "juxta-triage-bot"
+        }
+      ],
+      "posted": "verification-required@eacf1c6"
+    }
+  }
 }
