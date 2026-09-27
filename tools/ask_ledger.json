@@ -5,12 +5,12 @@
       "id": "ask-i1-1",
       "domain": "gate",
       "question": "ab_verify.py _checkout() picks the Juxta platform dir for the Node target WebDemo (no .venv), so A/B [6/6] and the mutation control cannot run Playwright (MODULE_NOT_FOUND node_modules). Fix it in Juxta (prefer the target config checkout), or change the WebDemo target setup to link an absolute node_modules path?",
-      "answer": "",
+      "answer": "Fix it in Juxta, never hard-code an absolute path in the WebDemo target.json: Devilbilly/Juxta#393 makes ab_verify A/B and mutation setup use the target config checkout (deployed 2026-09-27).",
       "sources": [
         "#1"
       ],
       "asked_date": "2026-09-27",
-      "answered_date": ""
+      "answered_date": "2026-09-27"
     }
   ]
 }
