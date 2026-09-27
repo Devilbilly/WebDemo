@@ -6,7 +6,8 @@
       "done": [
         "2026-09-27 PR #2 opened: \u78ba\u8a8d\u8a02\u55ae button + per-item \u79fb\u9664; 18 playwright tests pass; A/B main FAIL -> branch PASS",
         "2026-09-27 mutation declaration added; PASS with target checkout, exact command blocked by ab_verify _checkout() (ask-i1-1)",
-        "2026-09-27 mutation PASS on platform afabb0c (Juxta #393); pack SKILL.md reverted; lessons recorded as knowledge/packs/web/exp/exp-i1-1, exp-i1-2"
+        "2026-09-27 mutation PASS on platform afabb0c (Juxta #393); pack SKILL.md reverted; lessons recorded as knowledge/packs/web/exp/exp-i1-1, exp-i1-2",
+        "2026-09-27 dual-approved by Devilbilly; PR #2 merged 6df5b21, premerge PASS; knowledge landed Juxta#401; issue closed"
       ],
       "category": "script",
       "first_triaged": "2026-09-27",
@@ -16,31 +17,35 @@
         "source": "adopted at 2026-09-27T05:10:58Z: the issue already had a claude session",
         "fallback": "",
         "rounds": {
-          "claude": 3
+          "claude": 4
         },
         "date": "2026-09-27"
       },
-      "status": "verification-required",
+      "status": "verified",
       "items": [
         {
           "id": 1,
           "item": "Checkout button text changes from the old submit label to the confirm label",
           "author": "Devilbilly",
           "resolved": true,
-          "verified": false,
+          "verified": true,
           "added": "2026-09-27",
           "regression": "tests/i1-confirm-and-remove.spec.js",
-          "resolve_note": "submit button reads the confirm label; old label gone"
+          "resolve_note": "submit button reads the confirm label; old label gone",
+          "verified_by": "Devilbilly",
+          "verified_via": "https://github.com/Devilbilly/WebDemo/issues/1#issuecomment-5854188232"
         },
         {
           "id": 2,
           "item": "Each cart row gets a remove button that drops the whole item, updates the total, and shows the empty-cart note once everything is removed",
           "author": "Devilbilly",
           "resolved": true,
-          "verified": false,
+          "verified": true,
           "added": "2026-09-27",
           "regression": "tests/i1-confirm-and-remove.spec.js",
-          "resolve_note": "per-row remove button deletes the item, re-renders cart and total, empty note returns"
+          "resolve_note": "per-row remove button deletes the item, re-renders cart and total, empty note returns",
+          "verified_by": "Devilbilly",
+          "verified_via": "https://github.com/Devilbilly/WebDemo/issues/1#issuecomment-5854188232"
         }
       ],
       "replies": [
@@ -64,9 +69,51 @@
           "ref": "https://github.com/Devilbilly/WebDemo/issues/1#issuecomment-5853877644",
           "note": "mutation PASS on afabb0c; skills reverted; lessons as pack exp entries",
           "by": "juxta-triage-bot"
+        },
+        {
+          "date": "2026-09-27",
+          "kind": "verify-signoff",
+          "ref": "https://github.com/Devilbilly/WebDemo/issues/1#issuecomment-5854188232",
+          "note": "sign-off by Devilbilly",
+          "by": "Devilbilly"
+        },
+        {
+          "date": "2026-09-27",
+          "kind": "verified",
+          "ref": "dual-approval",
+          "note": "verified \u2014 both roles signed (Devilbilly)",
+          "by": "juxta-triage-bot"
+        },
+        {
+          "date": "2026-09-27",
+          "kind": "verify-signoff",
+          "ref": "https://github.com/Devilbilly/WebDemo/issues/1#issuecomment-5854188336",
+          "note": "sign-off by Devilbilly",
+          "by": "Devilbilly"
+        },
+        {
+          "date": "2026-09-27",
+          "kind": "verified",
+          "ref": "dual-approval",
+          "note": "verified \u2014 both roles signed (Devilbilly)",
+          "by": "juxta-triage-bot"
+        },
+        {
+          "date": "2026-09-27",
+          "kind": "commit",
+          "ref": "6df5b21",
+          "note": "merge of PR #2 (tests/i1-confirm-and-remove.spec.js + tests/fixtures/mutations/i1.json)",
+          "by": "juxta-triage-bot"
         }
       ],
-      "posted": "verification-required@d55b015"
+      "posted": "verified@6df5b21",
+      "filer": "Devilbilly",
+      "verify_signoffs": {
+        "Devilbilly": {
+          "date": "2026-09-27",
+          "via": "https://github.com/Devilbilly/WebDemo/issues/1#issuecomment-5854188336"
+        }
+      }
     }
   }
 }
