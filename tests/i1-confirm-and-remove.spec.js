@@ -7,6 +7,9 @@
 const { test, expect } = require("@playwright/test");
 const { PAGE } = require("./helpers");
 
+// A missing button should fail in seconds, not after the 30s test timeout.
+test.use({ actionTimeout: 5000 });
+
 async function add(page, name, times = 1) {
   for (let i = 0; i < times; i++) {
     await page.getByRole("button", { name: `加入${name}` }).click();
