@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "repairs": [
+    {
+      "regression": "tests/i1-confirm-and-remove.spec.js",
+      "changes": [
+        {
+          "path": "index.html",
+          "repaired": "<button id=\"submit-order\" type=\"submit\">確認訂單</button>",
+          "removed": "<button id=\"submit-order\" type=\"submit\">送出訂單</button>"
+        },
+        {
+          "path": "app.js",
+          "repaired": "      cart.delete(id);\n      renderCart();\n",
+          "removed": "      // Mutation: clicking the remove button changes nothing.\n"
+        }
+      ],
+      "expected": [
+        {
+          "nodeid": "tests/i1-confirm-and-remove.spec.js",
+          "message": "9 failed"
+        }
+      ]
+    }
+  ]
+}

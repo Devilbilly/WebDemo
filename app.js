@@ -49,7 +49,17 @@ function renderCart() {
     const row = document.createElement("li");
     row.className = "cart-item";
     row.dataset.id = id;
-    row.innerHTML = `<span>${item.name} × ${quantity}</span><span>${formatPrice(item.price * quantity)}</span>`;
+    row.innerHTML = `<span class="name">${item.name} × ${quantity}</span><span class="price">${formatPrice(item.price * quantity)}</span>`;
+    const remove = document.createElement("button");
+    remove.type = "button";
+    remove.className = "remove";
+    remove.textContent = "移除";
+    remove.setAttribute("aria-label", `移除${item.name}`);
+    remove.addEventListener("click", () => {
+      cart.delete(id);
+      renderCart();
+    });
+    row.appendChild(remove);
     list.appendChild(row);
   }
   document.getElementById("cart-empty").hidden = cart.size > 0;

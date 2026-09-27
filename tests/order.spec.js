@@ -22,17 +22,17 @@ test("adding items updates the cart and the total", async ({ page }) => {
 });
 
 test("an empty cart cannot be submitted", async ({ page }) => {
-  await page.getByRole("button", { name: "送出訂單" }).click();
+  await page.getByRole("button", { name: "確認訂單" }).click();
   await expect(page.locator("#form-error")).toHaveText("請先加入至少一項餐點");
 });
 
 test("name and phone are validated", async ({ page }) => {
   await page.getByRole("button", { name: "加入美式咖啡" }).click();
-  await page.getByRole("button", { name: "送出訂單" }).click();
+  await page.getByRole("button", { name: "確認訂單" }).click();
   await expect(page.locator("#form-error")).toHaveText("請填寫姓名");
   await page.getByLabel("姓名").fill("王小明");
   await page.getByLabel("手機號碼").fill("12345");
-  await page.getByRole("button", { name: "送出訂單" }).click();
+  await page.getByRole("button", { name: "確認訂單" }).click();
   await expect(page.locator("#form-error")).toHaveText("手機號碼格式不正確");
 });
 
@@ -41,7 +41,7 @@ test("a valid order shows the pickup confirmation", async ({ page }) => {
   await page.getByLabel("姓名").fill("王小明");
   await page.getByLabel("手機號碼").fill("0912345678");
   await page.getByLabel("取餐時間").selectOption("12:30");
-  await page.getByRole("button", { name: "送出訂單" }).click();
+  await page.getByRole("button", { name: "確認訂單" }).click();
   await expect(page.locator("#form-error")).toHaveText("");
   await expect(page.locator("#confirmation")).toHaveText("訂單已送出，請於 12:30 到店取餐");
 });
