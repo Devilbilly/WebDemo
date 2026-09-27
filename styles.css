@@ -1,0 +1,21 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Noto Sans TC", system-ui, sans-serif; color: #2b2118; background: #faf6f1; }
+.site-header { padding: 24px 32px; background: #6f4e37; color: #fff; }
+.site-header h1 { margin: 0; font-size: 28px; }
+.tagline { margin: 4px 0 0; opacity: 0.85; }
+.layout { display: grid; grid-template-columns: 2fr 1fr; gap: 24px; padding: 24px 32px; }
+.menu-list, .cart-list { list-style: none; margin: 0; padding: 0; }
+.menu-item { display: flex; align-items: center; justify-content: space-between; padding: 12px 0; border-bottom: 1px solid #e7ddd2; }
+.menu-item .price { margin: 0 16px 0 auto; color: #6f4e37; }
+.order { background: #fff; border-radius: 8px; padding: 16px 20px; box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08); }
+.cart-item { display: flex; justify-content: space-between; padding: 6px 0; }
+.cart-empty { color: #8a7a6c; }
+.cart-total { font-weight: bold; }
+.checkout { display: flex; flex-direction: column; gap: 6px; margin-top: 16px; }
+.checkout input, .checkout select { padding: 8px; border: 1px solid #cdbfb1; border-radius: 4px; font-size: 16px; }
+button { padding: 8px 14px; border: 0; border-radius: 4px; background: #6f4e37; color: #fff; font-size: 16px; cursor: pointer; }
+.form-error { min-height: 1.2em; margin: 4px 0; color: #b3261e; }
+.confirmation { padding: 12px; border-radius: 4px; background: #e6f4ea; color: #1e5631; }
+@media (max-width: 720px) {
+  .layout { grid-template-columns: 1fr; padding: 16px; }
+}

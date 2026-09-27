@@ -1,0 +1,12 @@
+{
+  "name": "webdemo",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A small café ordering site used as a Juxta demo target",
+  "scripts": {
+    "test": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "1.63.0"
+  }
+}
