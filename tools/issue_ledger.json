@@ -4,7 +4,8 @@
   "issues": {
     "1": {
       "done": [
-        "2026-09-27 PR #2 opened: \u78ba\u8a8d\u8a02\u55ae button + per-item \u79fb\u9664; 18 playwright tests pass; A/B main FAIL -> branch PASS"
+        "2026-09-27 PR #2 opened: \u78ba\u8a8d\u8a02\u55ae button + per-item \u79fb\u9664; 18 playwright tests pass; A/B main FAIL -> branch PASS",
+        "2026-09-27 mutation declaration added; PASS with target checkout, exact command blocked by ab_verify _checkout() (ask-i1-1)"
       ],
       "category": "script",
       "first_triaged": "2026-09-27",
@@ -14,7 +15,7 @@
         "source": "\u9810\u8a2d\uff08\u6c92\u6709\u4efb\u4f55\u8a2d\u5b9a\uff09",
         "fallback": "",
         "rounds": {
-          "claude": 1
+          "claude": 2
         },
         "date": "2026-09-27"
       },
@@ -48,9 +49,16 @@
           "ref": "eacf1c6",
           "note": "button rename + per-item remove + tests/i1-confirm-and-remove.spec.js",
           "by": "juxta-triage-bot"
+        },
+        {
+          "date": "2026-09-27",
+          "kind": "commit",
+          "ref": "d55b015",
+          "note": "tests/fixtures/mutations/i1.json mutation plan for tests/i1-confirm-and-remove.spec.js",
+          "by": "juxta-triage-bot"
         }
       ],
-      "posted": "verification-required@eacf1c6"
+      "posted": "verification-required@d55b015"
     }
   }
 }

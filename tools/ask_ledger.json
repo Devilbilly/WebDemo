@@ -1,4 +1,16 @@
 {
   "schema": 1,
-  "asks": []
+  "asks": [
+    {
+      "id": "ask-i1-1",
+      "domain": "gate",
+      "question": "ab_verify.py _checkout() picks the Juxta platform dir for the Node target WebDemo (no .venv), so A/B [6/6] and the mutation control cannot run Playwright (MODULE_NOT_FOUND node_modules). Fix it in Juxta (prefer the target config checkout), or change the WebDemo target setup to link an absolute node_modules path?",
+      "answer": "",
+      "sources": [
+        "#1"
+      ],
+      "asked_date": "2026-09-27",
+      "answered_date": ""
+    }
+  ]
 }
