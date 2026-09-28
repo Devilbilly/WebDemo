@@ -22,6 +22,17 @@
       ],
       "asked_date": "2026-09-28",
       "answered_date": "2026-09-28"
+    },
+    {
+      "id": "ask-i6-2",
+      "domain": "content",
+      "question": "Do issue #6's four verbatim findings require changing tests despite the README-only scope?",
+      "answer": "No. Owner comment 5862318689 says v1-v3 arose from contradictory wording in the issue; all three exact names appear in README.md. v4 quotes a Juxta policy explanation and is not an issue requirement. None of the four findings is a PR defect; preserve the README-only change.",
+      "sources": [
+        "#6"
+      ],
+      "asked_date": "2026-09-28",
+      "answered_date": "2026-09-28"
     }
   ]
 }
