@@ -1,0 +1,15 @@
+{
+ "id": "exp-i1-2",
+ "domain": "tests",
+ "situation": "Writing the merge-gate mutation plan tests/fixtures/mutations/i<N>.json for a Playwright (command runner) target, where one regression spec locks changes in more than one file.",
+ "right_direction": "Declare one repair with one change per file (revert the label in HTML, empty the JS handler rather than delete the element); nodeid is the spec file; choose a message that appears only when every change is caught, such as the exact 'N failed' count derived from which tests each change breaks; run the draft with --report and read the mutated output before fixing the message.",
+ "anti_pattern": "Using a test title as the message (it also appears when that test passes); a message that only one of the changes produces; deleting the whole button so presence-only tests carry the proof.",
+ "anti_signals": [],
+ "strength": 1,
+ "sources": [
+  "#1"
+ ],
+ "teacher": "agent",
+ "lock": "tests/fixtures/mutations/i1.json",
+ "tool": ""
+}
