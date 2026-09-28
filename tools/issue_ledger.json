@@ -186,7 +186,8 @@
     },
     "6": {
       "done": [
-        "2026-09-28 Reviewed README and both templates; prepared section draft; awaiting explicit Traditional Chinese exception to English-only commit policy. No repository content changed. Email skipped: no MTA configured."
+        "2026-09-28 Reviewed README and both templates; prepared section draft; awaiting explicit Traditional Chinese exception to English-only commit policy. No repository content changed. Email skipped: no MTA configured.",
+        "2026-09-28 Owner language decision recorded for ask-i6-1. Added 9 README lines; PR #7 open. Existing Playwright: 18 passed (3.5s); documentation and scope checks passed. Mutation/A-B N/A. Report posted on issue and mirrored to PR. Email skipped: no MTA configured."
       ],
       "en_index": {
         "title": "Add a \"Reporting issues\" section to the README explaining how to use the issue templates",
@@ -200,11 +201,11 @@
         "source": "drawn at first spawn 2026-09-28T02:15:43Z (claude 50 / codex 50; roll 0.6611)",
         "fallback": "",
         "rounds": {
-          "codex": 1
+          "codex": 2
         },
         "date": "2026-09-28"
       },
-      "status": "needs-scoping",
+      "status": "verification-required",
       "replies": [
         {
           "date": "2026-09-28",
@@ -212,9 +213,16 @@
           "ref": "https://github.com/Devilbilly/WebDemo/issues/6#issuecomment-5862119285",
           "note": "README section draft and language-policy conflict; ask-i6-1",
           "by": "juxta-triage-bot"
+        },
+        {
+          "date": "2026-09-28",
+          "kind": "commit",
+          "ref": "8f0c77a",
+          "note": "Add Traditional Chinese reporting guidance to README.md only",
+          "by": "juxta-triage-bot"
         }
       ],
-      "posted": "needs-scoping@2026-09-28"
+      "posted": "verification-required@8f0c77a"
     }
   }
 }

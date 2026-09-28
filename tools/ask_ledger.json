@@ -16,12 +16,12 @@
       "id": "ask-i6-1",
       "domain": "content",
       "question": "For issue #6, may the README-only change use Traditional Chinese as required by its acceptance criteria, as an explicit exception to the English-only committed-content rule?",
-      "answer": "",
+      "answer": "Use Traditional Chinese for the README section. The English-only policy applies to the Juxta repository, not application repositories; WebDemo follows its existing Traditional Chinese convention. The owner approved the proposed content.",
       "sources": [
         "#6"
       ],
       "asked_date": "2026-09-28",
-      "answered_date": ""
+      "answered_date": "2026-09-28"
     }
   ]
 }
