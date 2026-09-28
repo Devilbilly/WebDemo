@@ -183,6 +183,38 @@
         }
       },
       "items": []
+    },
+    "6": {
+      "done": [
+        "2026-09-28 Reviewed README and both templates; prepared section draft; awaiting explicit Traditional Chinese exception to English-only commit policy. No repository content changed. Email skipped: no MTA configured."
+      ],
+      "en_index": {
+        "title": "Add a \"Reporting issues\" section to the README explaining how to use the issue templates",
+        "summary": "Add a Traditional Chinese \"Reporting issues\" section to README.md so first-time WebDemo visitors learn how to report problems or request features using the existing \"Bug report\" and \"Feature request\" issue templates, including what each template asks for and a link to https://github.com/Devilbilly/WebDemo/issues/new/choose. The PR should only modify README.md, leaving site code, tests, Playwright"
+      },
+      "first_triaged": "2026-09-28",
+      "last_updated": "2026-09-28",
+      "category": "content",
+      "runtime": {
+        "last": "codex",
+        "source": "drawn at first spawn 2026-09-28T02:15:43Z (claude 50 / codex 50; roll 0.6611)",
+        "fallback": "",
+        "rounds": {
+          "codex": 1
+        },
+        "date": "2026-09-28"
+      },
+      "status": "needs-scoping",
+      "replies": [
+        {
+          "date": "2026-09-28",
+          "kind": "commented",
+          "ref": "https://github.com/Devilbilly/WebDemo/issues/6#issuecomment-5862119285",
+          "note": "README section draft and language-policy conflict; ask-i6-1",
+          "by": "juxta-triage-bot"
+        }
+      ],
+      "posted": "needs-scoping@2026-09-28"
     }
   }
 }
