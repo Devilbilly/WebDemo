@@ -117,7 +117,8 @@
     },
     "4": {
       "done": [
-        "2026-09-28 Copied both pack entries byte-for-byte; strict knowledge checks and rendering pass; existing suite 18 passed; PR #5 open; email skipped (no MTA configured)."
+        "2026-09-28 Copied both pack entries byte-for-byte; strict knowledge checks and rendering pass; existing suite 18 passed; PR #5 open; email skipped (no MTA configured).",
+        "2026-09-28 Owner verified; PR #5 merged at 7fa15fb5ad5ba97369060115ae5d2b94311916ae with merge rc=0 and merged=true; issue closed; email skipped (no MTA configured)."
       ],
       "en_index": {
         "title": "Move WebDemo's pack experience from Juxta back into this repo's .juxta/knowledge",
@@ -131,11 +132,11 @@
         "source": "drawn at first spawn 2026-09-28T00:59:54Z (claude 50 / codex 50; roll 0.6535)",
         "fallback": "",
         "rounds": {
-          "codex": 1
+          "codex": 2
         },
         "date": "2026-09-28"
       },
-      "status": "verification-required",
+      "status": "verified",
       "replies": [
         {
           "date": "2026-09-28",
@@ -150,9 +151,38 @@
           "ref": "https://github.com/Devilbilly/WebDemo/issues/4#issuecomment-5861519543",
           "note": "Validated completion report; mirrored to PR #5; verification required",
           "by": "juxta-triage-bot"
+        },
+        {
+          "date": "2026-09-28",
+          "kind": "verify-signoff",
+          "ref": "https://github.com/Devilbilly/WebDemo/issues/4#issuecomment-5861545034",
+          "note": "sign-off by Devilbilly",
+          "by": "Devilbilly"
+        },
+        {
+          "date": "2026-09-28",
+          "kind": "verified",
+          "ref": "dual-approval",
+          "note": "verified \u2014 both roles signed (Devilbilly)",
+          "by": "juxta-triage-bot"
+        },
+        {
+          "date": "2026-09-28",
+          "kind": "commented",
+          "ref": "https://github.com/Devilbilly/WebDemo/issues/4#issuecomment-5861563800",
+          "note": "Owner sign-off recorded; PR #5 merged through PASS gate; issue closed",
+          "by": "juxta-triage-bot"
         }
       ],
-      "posted": "verification-required@5082cb6"
+      "posted": "verified@7fa15fb5ad5ba97369060115ae5d2b94311916ae",
+      "filer": "Devilbilly",
+      "verify_signoffs": {
+        "Devilbilly": {
+          "date": "2026-09-28",
+          "via": "https://github.com/Devilbilly/WebDemo/issues/4#issuecomment-5861545034"
+        }
+      },
+      "items": []
     }
   }
 }
