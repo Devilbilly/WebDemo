@@ -114,6 +114,38 @@
           "via": "https://github.com/Devilbilly/WebDemo/issues/1#issuecomment-5854188336"
         }
       }
+    },
+    "4": {
+      "done": [
+        "2026-09-28 Copied both pack entries byte-for-byte; strict knowledge checks and rendering pass; existing suite 18 passed; PR #5 open; email skipped (no MTA configured)."
+      ],
+      "en_index": {
+        "title": "Move WebDemo's pack experience from Juxta back into this repo's .juxta/knowledge",
+        "summary": "Per Juxta #404's new rule that client knowledge lives in the client's own repo, copy the two web pack experience files learned in #1 (knowledge/packs/web/exp/exp-i1-1.json and exp-i1-2.json from Juxta main 8a2bb14) byte-for-byte into .juxta/knowledge/packs/web/exp/ in WebDemo, so the merge-gate knowledge check passes and they appear in the worker prompt's PRIOR EXPERIENCE from the client pack laye"
+      },
+      "first_triaged": "2026-09-28",
+      "last_updated": "2026-09-28",
+      "category": "chore",
+      "runtime": {
+        "last": "codex",
+        "source": "drawn at first spawn 2026-09-28T00:59:54Z (claude 50 / codex 50; roll 0.6535)",
+        "fallback": "",
+        "rounds": {
+          "codex": 1
+        },
+        "date": "2026-09-28"
+      },
+      "status": "verification-required",
+      "replies": [
+        {
+          "date": "2026-09-28",
+          "kind": "commit",
+          "ref": "5082cb6",
+          "note": "Copy two existing pack entries unchanged; PR #5",
+          "by": "juxta-triage-bot"
+        }
+      ],
+      "posted": "verification-required@5082cb6"
     }
   }
 }
