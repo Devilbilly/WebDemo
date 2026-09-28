@@ -189,7 +189,8 @@
         "2026-09-28 Reviewed README and both templates; prepared section draft; awaiting explicit Traditional Chinese exception to English-only commit policy. No repository content changed. Email skipped: no MTA configured.",
         "2026-09-28 Owner language decision recorded for ask-i6-1. Added 9 README lines; PR #7 open. Existing Playwright: 18 passed (3.5s); documentation and scope checks passed. Mutation/A-B N/A. Report posted on issue and mirrored to PR. Email skipped: no MTA configured.",
         "2026-09-28 Independent review passed all three acceptance criteria but approval=false: verbatim check demands four quoted strings in tests, including the owner's policy quotation. Preserved the explicit README-only scope. Review report: https://github.com/Devilbilly/WebDemo/issues/6#issuecomment-5862291600",
-        "2026-09-28 Recorded owner/filer verified sign-off; serialized pre-merge gate PASS, configured test suite exit 0; PR #7 merged at 534ac658470396662fc9054448af9a5b950a5307, confirmed merged=true, issue closed and labeled Verified. Owner verbatim clarification recorded as ask-i6-2. Report mirrored to PR. Email skipped: no MTA configured."
+        "2026-09-28 Recorded owner/filer verified sign-off; serialized pre-merge gate PASS, configured test suite exit 0; PR #7 merged at 534ac658470396662fc9054448af9a5b950a5307, confirmed merged=true, issue closed and labeled Verified. Owner verbatim clarification recorded as ask-i6-2. Report mirrored to PR. Email skipped: no MTA configured.",
+        "2026-09-28 Round 4: no new request; owner clarification was already handled. Cleared benign reopen marker, preserved verified sign-off, restored Verified label and closed issue. No product changes or gates rerun. Email skipped: no MTA configured."
       ],
       "en_index": {
         "title": "Add a \"Reporting issues\" section to the README explaining how to use the issue templates",
@@ -203,7 +204,7 @@
         "source": "drawn at first spawn 2026-09-28T02:15:43Z (claude 50 / codex 50; roll 0.6611)",
         "fallback": "",
         "rounds": {
-          "codex": 3
+          "codex": 4
         },
         "date": "2026-09-28"
       },
@@ -249,6 +250,13 @@
           "kind": "commented",
           "ref": "https://github.com/Devilbilly/WebDemo/issues/6#issuecomment-5862341933",
           "note": "Gated merge complete; PR #7 merged and issue closed",
+          "by": "juxta-triage-bot"
+        },
+        {
+          "date": "2026-09-28",
+          "kind": "commented",
+          "ref": "https://github.com/Devilbilly/WebDemo/issues/6#issuecomment-5862366363",
+          "note": "Benign duplicate notification; preserve verified delivery and restore closed state",
           "by": "juxta-triage-bot"
         }
       ],
