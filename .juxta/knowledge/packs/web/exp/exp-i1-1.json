@@ -1,0 +1,15 @@
+{
+ "id": "exp-i1-1",
+ "domain": "script",
+ "situation": "A web task adds a per-item action button (remove, edit) to a list rendered from state, or renames a visible button label that existing browser tests select by accessible name.",
+ "right_direction": "Create the button inside the existing render loop with type=button and an aria-label of action word plus item name; mutate the state and call the same render function so totals and empty-state text stay derived; update every getByRole name selector that used the old label in the same commit.",
+ "anti_pattern": "Patching the row DOM by hand instead of re-rendering (the total and the empty note drift); leaving old-label selectors in existing specs (each times out after 30s and red-lights the suite).",
+ "anti_signals": [],
+ "strength": 1,
+ "sources": [
+  "#1"
+ ],
+ "teacher": "agent",
+ "lock": "tests/i1-confirm-and-remove.spec.js",
+ "tool": ""
+}
